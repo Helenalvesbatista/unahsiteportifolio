@@ -24,16 +24,77 @@ visualOverrides.textContent = `
     line-height:1.25 !important;
     margin-bottom:18px !important;
   }
+  .contact-channel{
+    display:grid;
+    gap:5px;
+    padding-bottom:18px;
+    border-bottom:1px solid rgba(223,152,101,.3);
+  }
+  .contact-channel > span{
+    color:var(--copper);
+    font-weight:800;
+    font-size:1rem;
+  }
+  .contact-channel > strong{
+    color:#fff;
+    font-size:1.04rem;
+  }
+  .contact-actions{
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+    margin-top:4px;
+  }
+  .contact-actions a{
+    display:inline-flex !important;
+    padding:0 !important;
+    border:0 !important;
+    color:#c7d0d4 !important;
+    font-size:.88rem !important;
+    font-weight:700 !important;
+    text-decoration:underline !important;
+    text-underline-offset:3px;
+  }
+  .contact-actions a:hover{
+    color:var(--copper) !important;
+  }
   @media (max-width:820px){
-   
     .eyebrow{font-size:1.08rem !important;letter-spacing:.22em !important;}
   }
   @media (max-width:520px){
-  
     .eyebrow{font-size:1rem !important;letter-spacing:.2em !important;}
   }
 `;
 document.head.appendChild(visualOverrides);
+
+// Cada número da UNAH pode ser usado tanto para WhatsApp quanto para ligação.
+const contactLinks = document.querySelector('.contact-links');
+if (contactLinks) {
+  const emailItem = contactLinks.querySelector('a[href^="mailto:"]');
+  const atendimentoItem = Array.from(contactLinks.children).find((item) => item.tagName === 'DIV');
+
+  contactLinks.innerHTML = `
+    <div class="contact-channel">
+      <span>WhatsApp/Telefone</span>
+      <strong>(35) 99202-9316</strong>
+      <div class="contact-actions">
+        <a href="https://wa.me/5535992029316" target="_blank" rel="noopener noreferrer">Enviar mensagem</a>
+        <a href="tel:+5535992029316">Ligar</a>
+      </div>
+    </div>
+    <div class="contact-channel">
+      <span>WhatsApp/Telefone</span>
+      <strong>(35) 99895-8535</strong>
+      <div class="contact-actions">
+        <a href="https://wa.me/5535998958535" target="_blank" rel="noopener noreferrer">Enviar mensagem</a>
+        <a href="tel:+5535998958535">Ligar</a>
+      </div>
+    </div>
+  `;
+
+  if (emailItem) contactLinks.appendChild(emailItem);
+  if (atendimentoItem) contactLinks.appendChild(atendimentoItem);
+}
 
 const year = document.getElementById('year');
 if (year) year.textContent = new Date().getFullYear();
