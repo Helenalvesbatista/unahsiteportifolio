@@ -16,18 +16,6 @@ if (menuButton && menu) {
 // Ajustes finais aprovados: identidade visual e títulos de seção.
 const visualOverrides = document.createElement('style');
 visualOverrides.textContent = `
-  .brand-logo{
-    display:block !important;
-    width:min(270px,66vw) !important;
-    aspect-ratio:360/125 !important;
-    background-image:url("assets/unah-logo.png") !important;
-    background-position:center !important;
-    background-size:contain !important;
-    background-repeat:no-repeat !important;
-  }
-  .footer-brand .brand-logo{
-    width:min(245px,66vw) !important;
-  }
   .eyebrow{
     font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif !important;
     font-size:1.28rem !important;
@@ -37,13 +25,11 @@ visualOverrides.textContent = `
     margin-bottom:18px !important;
   }
   @media (max-width:820px){
-    .brand-logo{width:min(245px,66vw) !important;}
-    .footer-brand .brand-logo{width:min(225px,66vw) !important;}
+   
     .eyebrow{font-size:1.08rem !important;letter-spacing:.22em !important;}
   }
   @media (max-width:520px){
-    .brand-logo{width:min(230px,66vw) !important;}
-    .footer-brand .brand-logo{width:min(220px,66vw) !important;}
+  
     .eyebrow{font-size:1rem !important;letter-spacing:.2em !important;}
   }
 `;
