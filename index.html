@@ -14,7 +14,7 @@
   <header class="site-header" id="inicio">
     <div class="container nav-wrap">
       <a class="brand" href="#inicio" aria-label="UNAH - início">
-        <img src="assets/unah-logo.png" alt="UNAH — Gestão em Saúde e Resultados" />
+        <span class="brand-logo" role="img" aria-label="UNAH — Gestão em Saúde e Resultados"></span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
         <span></span><span></span><span></span>
@@ -24,6 +24,7 @@
         <a href="#servicos">Serviços</a>
         <a href="#proposito">Propósito</a>
         <a href="#valores">Valores</a>
+        <a href="#quem-somos">Quem somos</a>
         <a href="#contato">Contato</a>
         <a class="nav-cta" href="#contato">Fale conosco</a>
       </nav>
@@ -38,7 +39,7 @@
         </div>
 
         <div class="hero-copy">
-          <h1>Soluções inteligentes<br />em saúde para gerar<br /><em>resultados sustentáveis</em></h1>
+          <h1>Soluções inteligentes<br />em <span class="hero-health">saúde</span> para gerar<br /><span class="hero-result">resultados sustentáveis</span></h1>
           <p>Transformamos processos de faturamento, auditoria e gestão em saúde com resultados reais para a sua instituição de saúde.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#servicos">Conheça nossos serviços <span aria-hidden="true">→</span></a>
@@ -49,22 +50,22 @@
     </section>
 
     <section class="section-light section-pad" id="servicos">
-      <div class="container">
+      <div class="container center">
         <p class="eyebrow teal">Nossos serviços</p>
-        <h2 class="section-title copper">Gestão que conecta operação, controle e resultado.</h2>
+        <h2 class="section-title dark">Gestão que conecta operação, controle e resultado.</h2>
         <div class="cards three service-cards">
           <article class="card service-card">
-            <span class="card-number">01</span>
+            <span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5h6M9 3h6v4H9zM7 5H5v16h14V5h-2M8 11h8M8 15h8"/></svg></span>
             <h3>Faturamento</h3>
             <p>Gestão estruturada do faturamento hospitalar, com conferência de contas, processos, controles e redução de perdas.</p>
           </article>
           <article class="card service-card">
-            <span class="card-number">02</span>
+            <span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6v18h12v-8M14 3v5h5M10 12h3M10 16h2"/><circle cx="17" cy="15" r="3"/><path d="m19.2 17.2 2 2"/></svg></span>
             <h3>Auditoria</h3>
             <p>Auditoria administrativa de contas e processos para identificar inconsistências, apoiar conformidade e melhorar resultados.</p>
           </article>
           <article class="card service-card">
-            <span class="card-number">03</span>
+            <span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v5a4 4 0 0 0 8 0V3M4 3h4M12 3h4M10 12v2a5 5 0 0 0 10 0v-1"/><circle cx="20" cy="10" r="2"/></svg></span>
             <h3>Gestão em Saúde</h3>
             <p>Suporte estratégico à gestão de processos, indicadores, contratos, projetos e desempenho organizacional.</p>
           </article>
@@ -76,33 +77,58 @@
       <div class="container narrow center">
         <p class="eyebrow copper-text">Nosso propósito</p>
         <h2 class="serif-title">Gerar valor para instituições de saúde.</h2>
-        <p class="lead muted">Atuamos com gestão eficiente, transparente e estratégica para apoiar sustentabilidade, controle e evolução dos resultados.</p>
+        <p class="lead muted">Atuamos com uma gestão eficiente, transparente e estratégica, assegurando receitas e promovendo sustentabilidade para hospitais, clínicas e operadoras de saúde.</p>
         <div class="purpose-grid">
-          <div class="purpose-item"><span>▥</span><p>Assegurar receitas por meio de processos auditados</p></div>
-          <div class="purpose-item"><span>◒</span><p>Promover sustentabilidade financeira e operacional</p></div>
-          <div class="purpose-item"><span>◉</span><p>Atuar com transparência e visão de longo prazo</p></div>
+          <div class="purpose-item"><span class="purpose-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V11h4v9M10 20V6h4v14M16 20V3h4v17"/></svg></span><p>Assegurar receitas por meio de processos auditados</p></div>
+          <div class="purpose-item"><span class="purpose-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4C11 4 5 8 5 15c0 3 2 5 5 5 7 0 10-7 10-16Z"/><path d="M4 21c3-7 7-10 13-13"/></svg></span><p>Promover sustentabilidade financeira e operacional</p></div>
+          <div class="purpose-item"><span class="purpose-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 21v-2a6 6 0 0 1 12 0v2M14 21v-1.5a4.5 4.5 0 0 1 7-3.7"/></svg></span><p>Atuar com transparência e visão de longo prazo</p></div>
         </div>
       </div>
     </section>
 
-    <section class="section-light section-pad" id="valores">
+    <section class="values section-pad" id="valores">
       <div class="container center">
-        <p class="eyebrow">Nossos valores</p>
-        <h2 class="serif-title dark">Os princípios que guiam nosso trabalho.</h2>
-        <div class="cards five values-grid">
-          <article class="card value-card"><h3>Ética e Transparência</h3><p>Conduzimos cada relação e cada processo com integridade e clareza.</p></article>
-          <article class="card value-card"><h3>Foco em Resultados</h3><p>Entregamos impacto mensurável, orientado a metas e indicadores.</p></article>
-          <article class="card value-card"><h3>Compromisso com Pessoas</h3><p>Cuidamos de quem cuida, valorizando equipes e pacientes.</p></article>
-          <article class="card value-card"><h3>Excelência e Qualidade</h3><p>Buscamos o melhor padrão técnico em tudo o que fazemos.</p></article>
-          <article class="card value-card"><h3>Inovação Contínua</h3><p>Evoluímos processos e soluções para acompanhar o futuro da saúde.</p></article>
+        <p class="eyebrow copper-text">Nossos valores</p>
+        <h2 class="serif-title">Os princípios que <em>guiam</em> nosso trabalho.</h2>
+        <div class="values-grid">
+          <article class="value-card"><span class="value-icon outline"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 5 3 8 7 10 4-2 7-5 7-10V6z"/><path d="m9 12 2 2 4-4"/></svg></span><h3>Ética e Transparência</h3><p>Conduzimos cada relação e cada processo com integridade e clareza.</p></article>
+          <article class="value-card accent"><span class="value-icon filled"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1.5"/><path d="m15 9 5-5M17 4h3v3"/></svg></span><h3>Foco em Resultados</h3><p>Entregamos impacto mensurável, orientado a metas e indicadores.</p></article>
+          <article class="value-card"><span class="value-icon outline"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 21v-2a6 6 0 0 1 12 0v2M14 21v-1.5a4.5 4.5 0 0 1 7-3.7"/></svg></span><h3>Compromisso com Pessoas</h3><p>Cuidamos de quem cuida, valorizando equipes e pacientes.</p></article>
+          <article class="value-card"><span class="value-icon outline"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="4"/><path d="M9 13 8 21l4-2 4 2-1-8"/></svg></span><h3>Excelência e Qualidade</h3><p>Buscamos o melhor padrão técnico em tudo o que fazemos.</p></article>
+          <article class="value-card accent"><span class="value-icon filled"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 12 4-4 4 2 2-2 8 6-3 4-3-1-2 2-3-2-2 1-5-6Z"/><path d="m8 10 3 3M12 12l4 3"/></svg></span><h3>Parceria e Confiança</h3><p>Construímos relações duradouras baseadas em confiança mútua.</p></article>
+          <article class="value-card"><span class="value-icon outline"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M8 14a6 6 0 1 1 8 0c-1 1-1 2-1 2H9s0-1-1-2Z"/></svg></span><h3>Inovação Contínua</h3><p>Evoluímos processos e soluções para acompanhar o futuro da saúde.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section-light section-pad team" id="quem-somos">
-      <div class="container team-wrap">
+    <section class="about section-pad" id="quem-somos">
+      <div class="container">
+        <p class="eyebrow copper-text">Quem somos</p>
+        <h2 class="about-title">Direção clara para <em>resultados</em> sustentáveis.</h2>
+        <div class="about-cards">
+          <article class="about-card">
+            <span class="about-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21S4 16 4 10a4 4 0 0 1 7-2.5A4 4 0 0 1 18 10c0 6-6 11-6 11Z"/><path d="M7 13h3l1-3 2 6 1-3h3"/></svg></span>
+            <p class="card-kicker">Nosso foco</p>
+            <p>Transformar a gestão de organizações de saúde por meio da estruturação de processos, gestão financeira, faturamento, contratos, indicadores e melhoria de resultados, oferecendo soluções práticas e personalizadas para cada realidade.</p>
+          </article>
+          <article class="about-card accent">
+            <span class="about-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 21v-2a6 6 0 0 1 12 0v2M14 21v-1.5a4.5 4.5 0 0 1 7-3.7"/></svg></span>
+            <p class="card-kicker">Nossa missão</p>
+            <p>Apoiar organizações de saúde na construção de uma gestão mais eficiente, organizada e sustentável, transformando desafios em processos estruturados, informações em decisões e gestão em resultados.</p>
+          </article>
+          <article class="about-card">
+            <span class="about-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></span>
+            <p class="card-kicker">Nossa visão</p>
+            <p>Construir uma atuação reconhecida pela clareza, consistência e capacidade de gerar resultados sustentáveis na gestão em saúde.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-light section-pad leadership" id="lideranca">
+      <div class="container leadership-wrap">
         <p class="eyebrow teal">Liderança UNAH</p>
-        <h2 class="team-title">Duas formações, uma mesma direção.</h2>
+        <h2 class="leadership-title">Duas formações, uma mesma direção.</h2>
         <div class="founders">
           <article class="founder-card">
             <img src="assets/helen.webp" alt="Helen Alves Batista" />
@@ -113,7 +139,7 @@
             <div><h3>Anna Karen Silva Batista</h3><p>Administração</p></div>
           </article>
         </div>
-        <p class="team-tagline">Mais que consultoria e gestão, parceria para um futuro sustentável.</p>
+        <p class="leadership-tagline">Mais que consultoria e gestão, parceria para um futuro sustentável.</p>
       </div>
     </section>
 
@@ -124,7 +150,6 @@
           <h2 class="contact-title">Vamos construir<br />resultados <em>juntos?</em></h2>
           <p>Entenda como a UNAH pode apoiar a sua empresa ou instituição.</p>
         </div>
-
         <div class="contact-links" aria-label="Canais de contato da UNAH">
           <a href="https://wa.me/5535992029316" target="_blank" rel="noopener noreferrer"><span>WhatsApp</span><strong>(35) 99202-9316</strong></a>
           <a href="tel:+5535998958535"><span>Telefone</span><strong>(35) 99895-8535</strong></a>
@@ -138,7 +163,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <img src="assets/unah-logo.png" alt="UNAH — Gestão em Saúde e Resultados" />
+        <span class="brand-logo" role="img" aria-label="UNAH — Gestão em Saúde e Resultados"></span>
       </div>
       <div class="footer-contact">
         <a href="https://wa.me/5535992029316" target="_blank" rel="noopener noreferrer"><span>WhatsApp</span><strong>(35) 99202-9316</strong></a>
