@@ -53,3 +53,5 @@ form?.addEventListener('submit', (event) => {
 
   window.location.href = `mailto:unahgestaoemsaudeeresultados@gmail.com?subject=${subject}&body=${body}`;
 });
+
+// Versão visual alinhada ao modelo Enter-Exato aprovado.
