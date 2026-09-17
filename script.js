@@ -67,6 +67,15 @@ visualOverrides.textContent = `
 `;
 document.head.appendChild(visualOverrides);
 
+// Texto aprovado para o serviço de faturamento.
+const faturamentoCard = Array.from(document.querySelectorAll('.service-card')).find(
+  (card) => card.querySelector('h3')?.textContent.trim() === 'Faturamento'
+);
+if (faturamentoCard) {
+  const descricao = faturamentoCard.querySelector('p');
+  if (descricao) descricao.textContent = 'Gestão estruturada do faturamento para hospitais, clínicas, consultórios e instituições de saúde em geral, com conferência de contas, processos, controles e redução de perdas.';
+}
+
 // Cada número da UNAH pode ser usado tanto para WhatsApp quanto para ligação.
 const contactLinks = document.querySelector('.contact-links');
 if (contactLinks) {
