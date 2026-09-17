@@ -73,7 +73,7 @@ const faturamentoCard = Array.from(document.querySelectorAll('.service-card')).f
 );
 if (faturamentoCard) {
   const descricao = faturamentoCard.querySelector('p');
-  if (descricao) descricao.textContent = 'Gestão estruturada do faturamento para hospitais, clínicas, consultórios e instituições de saúde em geral, com conferência de contas, processos, controles e redução de perdas.';
+  if (descricao) descricao.textContent = 'Gestão estruturada do faturamento para clínicas, consultórios e instituições de saúde em geral, com conferência de contas, processos, controles e redução de perdas.';
 }
 
 // Cada número da UNAH pode ser usado tanto para WhatsApp quanto para ligação.
